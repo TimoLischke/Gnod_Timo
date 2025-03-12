@@ -9,15 +9,15 @@ Instructions
 DAY 1: Collecting Data 📊
 Objective:
 1️⃣ Scrape trending songs:
-
 Scrape the Billboard Hot 100 (Billboard Charts) to collect the top 100 songs and respective artists.
 Store this in a DataFrame with the columns:
 "song_title" and "artist"
 These songs will form a "Trending" category that users can choose from.
 
 2️⃣ Gather audio features:
-
-Explore the dataset that is provided to you, making sure you understand what each column means. Keep in mind that this knowledge will be precious for the machine learning part!
+Explore the dataset that is provided to you, making sure you understand what each column means. 
+Keep in mind that this knowledge will be precious for the machine learning part!
+https://developer.spotify.com/documentation/web-api/reference/get-audio-features
 
 DAY 2: Basic Recommendation System Setup 🤖
 Objective:
@@ -32,12 +32,11 @@ If they select another type, simply acknowledge their selection (without returni
 DAY 3: Clustering Songs for Personalized Recommendations 🎧
 Objective:
 1️⃣ Cluster songs based on their musical characteristics
-
-Use unsupervised learning (e.g., K-Means, DBSCAN, Hierarchical Clustering) to group similar songs.
+https://developer.spotify.com/documentation/web-api/reference/get-audio-features
+Use unsupervised learning (e.g., K-Means, Hierarchical Clustering, DBSCAN) to group similar songs.
 Identify 5 to 20 natural clusters in your dataset based on audio features.
 Assign a cluster ID to each song in the dataset.
 2️⃣ Label the Clusters (Genre & Mood-Based Categorization)
-
 Explore each cluster and assign a descriptive label (e.g., "Rock", "High Energy", "Chill Vibes").
 These labels will be used so that when a user selects a music type, they get a song from that cluster.
 
